@@ -12,10 +12,10 @@ const theme = createTheme({
       main: teal[900],
     },
     secondary: {
-      main: '#ff9800',
+      main: '#ff9900',
     },
     text:{
-      secondary:'rgba(0,0,0,0.2)'
+      secondary:'rgba(0,0,0,0.5)'
     },
   },
   typography:{

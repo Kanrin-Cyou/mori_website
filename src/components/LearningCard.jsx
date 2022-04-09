@@ -4,15 +4,15 @@ import { Card,CardHeader,CardContent, Typography } from '@mui/material';
 export default function learningCard({items}){
     return(
         <div>
-            <Card elevation={1}>
+            <Card elevation={0}>
                 <CardHeader 
-                    avatar={
-                        items.icon
-                    }
-                    title={items.title}
+                    avatar={items.icon}
                 />
                 <CardContent>
-                    <Typography variant='body2' color="textSecondary">
+                    <Typography variant='h5' pb={3}>
+                        {items.title}
+                    </Typography>
+                    <Typography variant='body2'>
                         {items.content}
                     </Typography>
                 </CardContent>
