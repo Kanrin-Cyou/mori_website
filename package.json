@@ -1,7 +1,7 @@
 {
   "name": "mori",
   "version": "0.1.0",
-  "homepage": "https://kanrin-cyou.github.io/mori_website",
+  "homepage": "https://kanrin-cyou.github.io/mori_website/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",

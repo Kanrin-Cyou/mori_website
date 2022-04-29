@@ -40,8 +40,9 @@ export default function ResponsiveAppBar(){
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (address) => {
     setAnchorElNav(null);
+    navigate(address);
   };
 
   HideOnScroll.propTypes = {
@@ -100,16 +101,16 @@ export default function ResponsiveAppBar(){
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            <MenuItem key={'Home'} onClick={()=> navigate('/mori_website/')}>
+                            <MenuItem key={'Home'} onClick={()=> handleCloseNavMenu('/mori_website/')}>
                                 <Typography textAlign="center">{'Home'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'事務所案内'} onClick={()=> navigate('/mori_website/profile')}>
+                            <MenuItem key={'事務所案内'} onClick={()=> handleCloseNavMenu('/mori_website/profile')}>
                                 <Typography textAlign="center">{'事務所案内'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'主な取払分野'} onClick={()=> navigate('/mori_website/service')}>
+                            <MenuItem key={'主な取払分野'} onClick={()=> handleCloseNavMenu('/mori_website/service')}>
                                 <Typography textAlign="center">{'主な取払分野'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'アクセス'} onClick={()=> navigate('/mori_website/access')}>
+                            <MenuItem key={'アクセス'} onClick={()=> handleCloseNavMenu('/mori_website/access')}>
                                 <Typography textAlign="center">{'アクセス'}</Typography>
                             </MenuItem>
                         </Menu>
@@ -160,7 +161,7 @@ export default function ResponsiveAppBar(){
                         color="secondary" 
                         variant="contained"
                         onClick={()=> navigate('/mori_website/contact')}
-                        sx = {{color: 'black'}}
+                        sx = {{color: 'black', display: {xs: 'none', md: 'block' }}}
                         pr={10}
                     >
                         お問い合わせ

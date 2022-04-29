@@ -116,6 +116,7 @@ export default function Home(){
                                 textSizeMedium
                                 onClick={()=> navigate('/mori_website/contact')}
                                 sx = {{mt:5, pt:2,pb:2,pl:3,pr:3,color:'black'}}
+                                xs = {{color:'black'}}
                             >
                                 お問い合わせ
                             </Button>
