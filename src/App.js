@@ -34,11 +34,11 @@ const theme = createTheme({
 function App() {
 
   return (
-    <ThemeProvider theme={theme} basename={"/mori_website"}>
-      <Router>
+    <ThemeProvider theme={theme}>
+      <Router basename={"/mori_website"}>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route exact path="/" element={<Home/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/service" element={<Service/>}/>
             <Route path="/access" element={<Access/>}/>
