@@ -35,7 +35,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router basename={"/mori_website"}>
+      <Router>
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
