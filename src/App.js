@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Link } from 'react-router-dom';
 import React from "react";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
@@ -35,14 +35,14 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router basename="/mori_website">
+      <Router>
         <Layout>
-          <Routes basename="/mori_website">
-            <Route path="/" element={<Home/>}/>
-            <Route path="/profile" element={<Profile/>}/>
-            <Route path="/service" element={<Service/>}/>
-            <Route path="/access" element={<Access/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+          <Routes>
+            <Route path="/mori_website/" element={<Home/>}/>
+            <Route path="/mori_website/profile" element={<Profile/>}/>
+            <Route path="/mori_website/service" element={<Service/>}/>
+            <Route path="/mori_website/access" element={<Access/>}/>
+            <Route path="/mori_website/contact" element={<Contact/>}/>
           </Routes>
         </Layout>
       </Router>

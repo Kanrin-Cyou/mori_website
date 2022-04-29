@@ -100,16 +100,16 @@ export default function ResponsiveAppBar(){
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            <MenuItem key={'Home'} onClick={()=> navigate('/')}>
+                            <MenuItem key={'Home'} onClick={()=> navigate('/mori_website/')}>
                                 <Typography textAlign="center">{'Home'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'事務所案内'} onClick={()=> navigate('/profile')}>
+                            <MenuItem key={'事務所案内'} onClick={()=> navigate('/mori_website/profile')}>
                                 <Typography textAlign="center">{'事務所案内'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'主な取払分野'} onClick={()=> navigate('/service')}>
+                            <MenuItem key={'主な取払分野'} onClick={()=> navigate('/mori_website/service')}>
                                 <Typography textAlign="center">{'主な取払分野'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'アクセス'} onClick={()=> navigate('/access')}>
+                            <MenuItem key={'アクセス'} onClick={()=> navigate('/mori_website/access')}>
                                 <Typography textAlign="center">{'アクセス'}</Typography>
                             </MenuItem>
                         </Menu>
@@ -128,28 +128,28 @@ export default function ResponsiveAppBar(){
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             key={'Home'}
-                            onClick={()=> navigate('/')}
+                            onClick={()=> navigate('/mori_website/')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             Home
                         </Button>
                         <Button
                             key={'事務所案内'}
-                            onClick={()=> navigate('/profile')}
+                            onClick={()=> navigate('/mori_website/profile')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             事務所案内
                         </Button>
                         <Button
                             key={'主な取払分野'}
-                            onClick={()=> navigate('/service')}
+                            onClick={()=> navigate('/mori_website/service')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             主な取払分野
                         </Button>
                         <Button
                             key={'アクセス'}
-                            onClick={()=> navigate('/access')}
+                            onClick={()=> navigate('/mori_website/access')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             アクセス
@@ -159,7 +159,7 @@ export default function ResponsiveAppBar(){
                     <Button 
                         color="secondary" 
                         variant="contained"
-                        onClick={()=> navigate('/contact')}
+                        onClick={()=> navigate('/mori_website/contact')}
                         sx = {{color: 'black'}}
                         pr={10}
                     >
