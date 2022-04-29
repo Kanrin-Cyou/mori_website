@@ -34,7 +34,7 @@ const theme = createTheme({
 function App() {
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} basename={process.env.PUBLIC_URL}>
       <Router>
         <Layout>
           <Routes>
