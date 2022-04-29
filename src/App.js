@@ -35,10 +35,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/mori_website">
         <Layout>
-          <Routes>
-            <Route exact path="/" element={<Home/>}/>
+          <Routes basename="/mori_website">
+            <Route path="/" element={<Home/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/service" element={<Service/>}/>
             <Route path="/access" element={<Access/>}/>
