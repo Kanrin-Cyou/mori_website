@@ -1,5 +1,6 @@
 import React from 'react';
 import ResponsiveAppBar from './Appbar';
+import Footer from './Footer';
 
 export default function Layout({children}){
 
@@ -7,6 +8,7 @@ export default function Layout({children}){
         <div> 
             <ResponsiveAppBar/>
             {children}
+            <Footer/>
         </div>
     )
 }

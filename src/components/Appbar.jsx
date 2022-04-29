@@ -12,7 +12,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import PropTypes from 'prop-types';
 import { useLocation, useNavigate } from "react-router-dom";
 
-const pages = ['事務所案内', '主な取払分野', 'アクセス'];
+
 
   function HideOnScroll(props) {
     const { children, window } = props;
@@ -66,7 +66,7 @@ export default function ResponsiveAppBar(){
                         component="div"
                         sx={{mr: 2, display: { xs: 'none', md: 'flex' } }}
                     >
-                        事務所
+                        行政書士M&K総合事務所
                     </Typography>
 
                     <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -100,11 +100,18 @@ export default function ResponsiveAppBar(){
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))}
+                            <MenuItem key={'Home'} onClick={()=> navigate('/')}>
+                                <Typography textAlign="center">{'Home'}</Typography>
+                            </MenuItem>
+                            <MenuItem key={'事務所案内'} onClick={()=> navigate('/profile')}>
+                                <Typography textAlign="center">{'事務所案内'}</Typography>
+                            </MenuItem>
+                            <MenuItem key={'主な取払分野'} onClick={()=> navigate('/service')}>
+                                <Typography textAlign="center">{'主な取払分野'}</Typography>
+                            </MenuItem>
+                            <MenuItem key={'アクセス'} onClick={()=> navigate('/access')}>
+                                <Typography textAlign="center">{'アクセス'}</Typography>
+                            </MenuItem>
                         </Menu>
                     </Box>    
                     
@@ -115,29 +122,48 @@ export default function ResponsiveAppBar(){
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
                     >
-                        事務所
+                        行政書士 M&K総合事務所
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
                         <Button
-                            key={page}
-                            onClick={handleCloseNavMenu}
+                            key={'Home'}
+                            onClick={()=> navigate('/')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            {page}
+                            Home
                         </Button>
-                        ))}
+                        <Button
+                            key={'事務所案内'}
+                            onClick={()=> navigate('/profile')}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            事務所案内
+                        </Button>
+                        <Button
+                            key={'主な取払分野'}
+                            onClick={()=> navigate('/service')}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            主な取払分野
+                        </Button>
+                        <Button
+                            key={'アクセス'}
+                            onClick={()=> navigate('/access')}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            アクセス
+                        </Button>
                     </Box>
                     
                     <Button 
                         color="secondary" 
                         variant="contained"
-                        onClick={()=> navigate('/login')}
+                        onClick={()=> navigate('/contact')}
                         sx = {{color: 'black'}}
                         pr={10}
                     >
-                        事務所案内
+                        お問い合わせ
                     </Button>
 
                 </Toolbar>

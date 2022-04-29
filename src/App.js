@@ -1,6 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from "react";
 import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Service from './pages/Service';
+import Access from './pages/Contact';
+import Contact from './pages/Contact';
 import Layout from './components/Layout';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { teal } from '@mui/material/colors';
@@ -35,8 +39,10 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            {/* <Route path="/note" element={<Notes/>}/>
-            <Route path="/create" element={<Create/>}/> */}
+            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/service" element={<Service/>}/>
+            <Route path="/access" element={<Access/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </Layout>
       </Router>
