@@ -11,16 +11,16 @@ export default function learningCard({items}){
                 <CardHeader 
                     avatar={items.icon}
                 />
-                <Typography variant='h5' pl={2} pb={2}>
+                <Typography variant='h5'  pb={2}>
                     {items.title}
                 </Typography>
-                <Typography variant='body2' pl={2}>
+                <Typography variant='body2' >
                     {items.content}
                 </Typography>
             </CardContent>
             <CardActions>
                 <Button 
-                    sx = {{ml:2,mb:3}}
+                    sx = {{mb:3}}
                 >
                     Learn More
                 </Button>
