@@ -22,7 +22,7 @@ export default function learningCard({items}){
                 <Button 
                     sx = {{mb:3}}
                 >
-                    Learn More
+                    詳細
                 </Button>
             </CardActions>
         </Card>

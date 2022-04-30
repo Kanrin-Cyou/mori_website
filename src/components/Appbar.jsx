@@ -12,7 +12,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import PropTypes from 'prop-types';
 import { useLocation, useNavigate } from "react-router-dom";
 
-
+var Scroll = require('react-scroll');
 
   function HideOnScroll(props) {
     const { children, window } = props;
@@ -45,6 +45,8 @@ export default function ResponsiveAppBar(){
     navigate(address);
   };
 
+  var scroll = Scroll.animateScroll;
+
   HideOnScroll.propTypes = {
     children: PropTypes.element.isRequired,
     /**
@@ -71,7 +73,6 @@ export default function ResponsiveAppBar(){
                     </Typography>
 
                     <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -146,11 +147,11 @@ export default function ResponsiveAppBar(){
                             onClick={()=> navigate('/mori_website/service')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            主な取払分野
+                            業務内容
                         </Button>
                         <Button
                             key={'アクセス'}
-                            onClick={()=> navigate('/mori_website/access')}
+                            onClick={()=> {scroll.scrollToBottom(100)}}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             アクセス

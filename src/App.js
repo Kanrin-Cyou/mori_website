@@ -3,7 +3,6 @@ import React from "react";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Service from './pages/Service';
-import Access from './pages/Contact';
 import Contact from './pages/Contact';
 import Layout from './components/Layout';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -41,7 +40,6 @@ function App() {
             <Route path="/mori_website/" element={<Home/>}/>
             <Route path="/mori_website/profile" element={<Profile/>}/>
             <Route path="/mori_website/service" element={<Service/>}/>
-            <Route path="/mori_website/access" element={<Access/>}/>
             <Route path="/mori_website/contact" element={<Contact/>}/>
           </Routes>
         </Layout>
