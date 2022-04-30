@@ -5,6 +5,59 @@ import LawImage from "../asset/law.jpeg";
 
 export default function Service(){
 
+    const legalContract = [
+        {
+            title:'業務委託契約書',
+            note:'業務委託契約書とは、特定の仕事を行うことを目的とした契約です。個別の案件・業務内容について取り交わすのが業務委託契約書になります。',
+        },
+        {
+            title:'売買契約書',
+            note:'売買契約書とは、売り手と買い手の間で、商品やサービスの取引に関しての約束事[取引や支払いの条件等=いつ、何を、どれだけ(数量)、いくらで売るのか]を書面にしたものです。事前にお互いが合意した売買の条件を明確にし、合意の上で取引をすることを目的とします。',
+        },
+        {
+            title:'土地不動産売買契約書',
+            note:'不動産の売買契約は高額な資産を対象とする大きな取引になるため、専門家に依頼してしっかりとした契約書を作成することをおすすめします。',
+        },
+        {
+            title:'業務提携契約書',
+            note:'業務提携契約書とは、会社間でお互いに得意な分野で提携したり、業務の一部を他社に委託するときに締結する契約書です。当ツールでは単純に「商品」を販売する会社と製造する2社が、製造と販売をそれぞれが担当するという内容の契約書となっております。',
+        }     
+    ]
+
+    const legalPermission = [
+        {
+            title:'外国人就労ビザ',
+            note:'外国人従業員の雇用、外国人研修生の受入れ、永住・帰化など、入国管理局へそれぞれビザ申請をする必要があります。',
+        },
+        {
+            title:'飲食業許可',
+            note:'レストラン、カフェなどの飲食店をはじめるには、保健所の許可が必要となります。施設が基準を満たす事、食品衛生責任者と配置することなどが求められます。',
+        },
+        {
+            title:'古物商許可',
+            note:'リサイクルショップやネットオークションで中古品売買の商売をしている人は、許可が必要となります。',
+        },
+        {
+            title:'食品営業許可',
+            note:'お菓子の製造や、食肉製品の製造など、製造する食品の種類ごとに許可が必要となります。',
+        },
+    ]
+
+    const laborRelated = [
+        {
+            title:'産業医契約書',
+            note:'産業医は常時50人以上の従業員がいる職場で選任が義務付けられています。依頼する内容を明確にし、契約を締結しておくことが重要です。',
+        },
+        {
+            title:'雇用契約書作成',
+            note:'従業員を採用するときは、賃金や労働時間などの労働条件を明示することが、労働基準法で義務付けられています。従業員とトラブルになる会社は、たいがいこの労働条件をあいまいなままで採用しているようです。',
+        },
+        {
+            title:'各種規程作成',
+            note:'就業規則には主要な規程だけを定めておき、詳細な内容は別に諸規程(別規程)として定めることが一般的です。賃金規定、育児介護規定などがあります。',
+        },
+    ]
+
     return(
         <Box
         sx={{
@@ -19,7 +72,7 @@ export default function Service(){
                             component="div"
                             sx={{color:"white",pt:5, flexGrow: 1 }}
                         >
-                            業務内容
+                            主な取扱分野
                         </Typography>
             </Container> 
 
@@ -29,87 +82,54 @@ export default function Service(){
                         backgroundColor: 'white',
                     }}
             >
-                    <Container sx={{pt:8}}>
-                    
-                        <Typography align="left" variant="h3">
-                            ごあいさつ
+                    <Container sx={{pt:8,pb:8}}>
+                        <Typography align="left" sx={{pb:5}} variant="h4">
+                            法務 - 契約書作成
                         </Typography>
-
-                        <Grid container spacing={2}>
-
-                            <Grid item xs={6}>
-
-                                <Box sx={{pt:5, pb:5,pr:5}}>
-                                    <img style={{height:"auto",maxWidth:"100%"}} src={LawImage} alt='study'/>
-                                </Box>
-                               
-
-                                <Typography sx={{pb:8}} align="left" variant="h5" >
-                                行政書士　森下　洋
-                                <br/>
-                                <br/>
-                                ■ 登録番号:06081463
-                                <br/>
-                                ■ 早稲田大学政経学部卒
-                                <br/>
-                                ■ 東京都行政書士会新宿支部所属
-                                <br/>
-                                ■ 宅地建物取引士
-                                
+                        {legalContract.map(items => (
+                            <Box>
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                    {items.title}
                                 </Typography>
-                            </Grid>
-
-                            <Grid item xs={6}>
-
-                                <Typography sx={{pt:5, pb:8, color:"text.secondary"}} align="left" variant="h5" >
-                                    当事務所は都営新宿線新宿三丁目駅のそばにある総合事務所です。
-                                    <br/>
-                                    <br/>
-                                    電子定款作成及び認証代理・各種許認可・会社関係書類作成・入国管理局関係書類作成・サイト売買契約書作成等に専門性を有し、
-                                    お客様の実情に合わせた柔軟な対応を第一に活動しております。会社設立後の経営支援についても、対応しております。
-                                    <br/>
-                                    <br/>
-                                    併設の税理士、司法書士、社会保険労務士各事務所と緊密に連携しておりますので多くの事例に即応できます。
-                                    <br/>
-                                    <br/>
-                                    立上げ当初で運営コストを抑えたいお客様向けの価格帯のサービスなども、
-                                    多くのお客様にご利用いただいており、好評です。
-                                    <br/>
-                                    <br/>
-                                    また、風俗営業、運送業、古物商、電気通信事業、飲食店営業許可等、
-                                    各種許認可の取得にも実績がございます。
-                                    <br/>
-                                    <br/>
-                                    くらしと仕事についての身近な相談者としてお気軽にご活用ください。
-                                    <br/>
-                                    <br/>
-                                    よろしくお願い致します。
+                                <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
+                                    {items.note}
                                 </Typography>
-                            </Grid>
-                        </Grid>
+                            </Box>
+                        ))}
+
+                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4">
+                            法務 - 許認可
+                        </Typography>
+                        {legalPermission.map(items => (
+                            <Box>
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                    {items.title}
+                                </Typography>
+                                <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
+                                    {items.note}
+                                </Typography>
+                            </Box>
+                        ))}
+
+                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4">
+                            労務 - 就業規則・契約書作成
+                        </Typography>
+                        {laborRelated.map(items => (
+                            <Box>
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                    {items.title}
+                                </Typography>
+                                <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
+                                    {items.note}
+                                </Typography>
+                            </Box>
+                        ))}
 
                         
-
+                
                     </Container>
-            </Box>
-
-            <Box 
-                    sx={{
-                        width: '100vw',
-                        backgroundColor: '#fafafa',
-                    }}
-            >
-                    <Container sx={{pt:8, pb:8}}>
-                        <Typography sx={{pb:8}} align="left" variant="h3">
-                            事務所概要
-                        </Typography>
-
-                        <img style={{height:"auto",maxWidth:"100%"}} src={WorkImage} alt='workplace'/>
-
-                    </Container>
-
-                    
-            </Box>            
+                        
+            </Box>  
 
     </Box>        
     )

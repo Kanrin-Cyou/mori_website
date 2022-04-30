@@ -18,7 +18,7 @@ const theme = createTheme({
       main: '#ff9900',
     },
     text:{
-      secondary:'rgba(0,0,0,0.5)'
+      secondary:'rgba(0,0,0,0.8)'
     },
   },
   typography:{

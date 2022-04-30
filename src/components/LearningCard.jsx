@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card,CardHeader,Box, CardContent,CardActions,Button, Typography} from '@mui/material';
 
-export default function learningCard({items}){
+export default function learningCard({items,nav}){
+
     return(
         <Card 
             elevation={1} 
@@ -21,6 +22,7 @@ export default function learningCard({items}){
             <CardActions>
                 <Button 
                     sx = {{mb:3}}
+                    onClick={()=> {nav('/mori_website/service')}}
                 >
                     詳細
                 </Button>

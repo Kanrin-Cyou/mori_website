@@ -160,7 +160,7 @@ export default function Home(){
                     <Grid id="hero" container spacing={2}>
                         {serviceTypes.map(items => (
                             <Grid item style={{width:"100%"}} xs={6} md={4} key={items.title} spacing={2}> 
-                                <LearningCard items={items}/>
+                                <LearningCard items={items} nav={navigate}/>
                             </Grid>
                         ))}
                     </Grid>

@@ -111,7 +111,7 @@ export default function ResponsiveAppBar(){
                             <MenuItem key={'主な取払分野'} onClick={()=> handleCloseNavMenu('/mori_website/service')}>
                                 <Typography textAlign="center">{'主な取払分野'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'アクセス'} onClick={()=> handleCloseNavMenu('/mori_website/access')}>
+                            <MenuItem key={'アクセス'} onClick={()=>{scroll.scrollToBottom(100)}}>
                                 <Typography textAlign="center">{'アクセス'}</Typography>
                             </MenuItem>
                         </Menu>
@@ -147,7 +147,7 @@ export default function ResponsiveAppBar(){
                             onClick={()=> navigate('/mori_website/service')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            業務内容
+                            主な取扱分野
                         </Button>
                         <Button
                             key={'アクセス'}
