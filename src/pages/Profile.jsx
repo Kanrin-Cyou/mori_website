@@ -35,7 +35,7 @@ export default function Profile(){
                                 ごあいさつ
                             </Typography>
 
-                            <Grid container>
+                            <Grid container spacing={2}>
 
                                 <Grid item xs={12} md={6}
                                     data-aos="fade-right"
@@ -64,8 +64,8 @@ export default function Profile(){
                                 </Grid>
 
                                 <Grid item xs={12} md={6}
-                                    data-aos="fade-left"
-                                    data-aos-duration="1000"
+                                data-aos="fade-right"
+                                data-aos-duration="1000"
                                 >
                                     <Typography sx={{pt:5, pb:8, color:"text.secondary"}} align="left" variant="h5">
                                         当事務所は都営新宿線新宿三丁目駅のそばにある総合事務所です。

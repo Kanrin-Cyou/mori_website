@@ -50,7 +50,7 @@ return(
                     data-aos-duration="1000"
                 >
                     <Box
-                        sx={{mt:5,mb:10,mr:20,height:"100%",width:"100%"}}
+                        sx={{mt:5,mb:10,mr:15,height:"100%",width:"100%"}}
                     >
                     <iframe 
                     title="googlemap" 

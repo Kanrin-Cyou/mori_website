@@ -131,8 +131,8 @@ export default function Service(){
                         </Typography>
                         {laborRelated.map(items => (
                             <Box
-                                data-aos="fade-up"
-                                data-aos-duration="700"
+                            data-aos="fade-up"
+                            data-aos-duration="700"
                             >
                                 <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
                                     {items.title}

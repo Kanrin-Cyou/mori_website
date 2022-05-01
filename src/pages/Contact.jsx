@@ -12,7 +12,6 @@ export default function Contact(){
         }}
         >
             <Container sx={{pt:8, pb:8}}>
-
                 <Typography align="center" variant="h3">
                     お問い合わせ
                 </Typography>
