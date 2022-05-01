@@ -181,7 +181,10 @@ export default function Home(){
             >
                 <Container sx={{pt:8, pb:8}}>
 
-                    <Typography align="center" variant="h3">
+                    <Typography align="center" variant="h3"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                    >
                         Committed To Helping Our
                         <br/>
                         Clients Succeed.
@@ -193,7 +196,10 @@ export default function Home(){
 
                     <Grid id="hero" align="center" container pb={8} spacing={2}>
                         {serviceData.map(items => (
-                             <Grid item sx={12} sm={6} md={3} spacing={2}> 
+                             <Grid item sx={12} sm={6} md={3} spacing={2}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
+                             > 
                                 <Typography align="center" variant="h3" color="primary">
                                     {items.title}
                                 </Typography>
@@ -204,7 +210,10 @@ export default function Home(){
                         ))}
                     </Grid>
 
-                    <img style={{height:"auto",maxWidth:"100%"}} src={WorkImage} alt='workplace'/>
+                    <img style={{height:"auto",maxWidth:"100%"}} src={WorkImage} alt='workplace'
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                    />
 
                 </Container>
             </Box>
