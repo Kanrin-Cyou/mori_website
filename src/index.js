@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App
+      style={{width:"100%",overflowX:"hidden"}}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

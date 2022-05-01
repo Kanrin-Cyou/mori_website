@@ -89,7 +89,7 @@ export default function Home(){
             }}
             >
                 <Container sx={{pt:10, pb:8}}>
-                    <Grid container spacing={2} >
+                    <Grid container>
                         <Grid item xs={12} md={7}
                             data-aos="fade-right"
                             data-aos-duration="1000"
@@ -155,7 +155,7 @@ export default function Home(){
             >
                 <Container sx={{pt:8, pb:8}}>
 
-                    <Grid container spacing={2} pb={5}>
+                    <Grid container pb={5}>
                         <Grid item sx={7}>
                             <Typography variant="h3">
                                 業務内容
@@ -163,9 +163,9 @@ export default function Home(){
                         </Grid>
                     </Grid>
 
-                    <Grid id="hero" container spacing={2}>
+                    <Grid id="hero" container>
                         {serviceTypes.map(items => (
-                            <Grid item style={{width:"100%"}} xs={6} md={4} key={items.title} spacing={2}> 
+                            <Grid item style={{width:"100%"}} xs={6} md={4} key={items.title}> 
                                 <LearningCard items={items} nav={navigate}/>
                             </Grid>
                         ))}
@@ -194,9 +194,9 @@ export default function Home(){
                         We Are Committed To Delivering Top Quality Legal Service.
                     </Typography>
 
-                    <Grid id="hero" align="center" container pb={8} spacing={2}>
+                    <Grid id="hero" align="center" container pb={8}>
                         {serviceData.map(items => (
-                             <Grid item sx={12} sm={6} md={3} spacing={2}
+                             <Grid item sx={12} sm={6} md={3}
                                 data-aos="fade-up"
                                 data-aos-duration="700"
                              > 

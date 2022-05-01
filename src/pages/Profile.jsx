@@ -35,7 +35,7 @@ export default function Profile(){
                                 ごあいさつ
                             </Typography>
 
-                            <Grid container spacing={2}>
+                            <Grid container>
 
                                 <Grid item xs={12} md={6}
                                     data-aos="fade-right"
