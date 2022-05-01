@@ -60,7 +60,7 @@ export default function ResponsiveAppBar(){
     return ( 
     
     <HideOnScroll>
-        <AppBar elevation={0}>
+        <AppBar elevation={0} sx={{maxWidth:"100%"}}>
             <Container p={5}>
                 <Toolbar disableGutters>
                     <Typography
