@@ -7,6 +7,8 @@ export default function learningCard({items,nav}){
         <Card 
             elevation={1} 
             style={{height:"100%"}}
+            data-aos="fade-up"
+            data-aos-duration="700"
         >
             <CardContent>
                 <CardHeader 

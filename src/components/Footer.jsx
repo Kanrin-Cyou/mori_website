@@ -12,7 +12,10 @@ return(
     >
         <Container sx={{pt:5, pb:5}}>
             <Grid container spacing={3}>
-                <Grid item sx={12} md={6}>
+                <Grid item sx={12} md={6}
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
                     <Typography
                         variant="h5"
                         component="div"
@@ -42,7 +45,10 @@ return(
                     
                 </Grid>
 
-                <Grid item sx={12} md={6} >
+                <Grid item sx={12} md={6}
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                >
                     <Typography
                         variant="h6"
                         component="div"

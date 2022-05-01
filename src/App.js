@@ -1,12 +1,17 @@
+import React, { Component }from 'react';
+
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route,Link } from 'react-router-dom';
-import React from "react";
+import { teal } from '@mui/material/colors';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
 import Layout from './components/Layout';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { teal } from '@mui/material/colors';
+
 
 const theme = createTheme({
   palette: {
@@ -30,23 +35,31 @@ const theme = createTheme({
   }
 });
 
-function App() {
+class App extends Component {
 
-  return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/mori_website/" element={<Home/>}/>
-            <Route path="/mori_website/profile" element={<Profile/>}/>
-            <Route path="/mori_website/service" element={<Service/>}/>
-            <Route path="/mori_website/contact" element={<Contact/>}/>
-          </Routes>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+  componentDidMount(){
+    AOS.init({
+      duration: 1000
+    });
+  }
 
-  );
+  render(){
+    return (
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/mori_website/" element={<Home/>}/>
+              <Route path="/mori_website/profile" element={<Profile/>}/>
+              <Route path="/mori_website/service" element={<Service/>}/>
+              <Route path="/mori_website/contact" element={<Contact/>}/>
+            </Routes>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+
+    );
+  }
 }
 
 export default App;

@@ -90,7 +90,10 @@ export default function Home(){
             >
                 <Container sx={{pt:10, pb:8}}>
                     <Grid container spacing={2} >
-                        <Grid item xs={12} md={7}>
+                        <Grid item xs={12} md={7}
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <Typography
                                 variant="h3"
                                 component="div"
@@ -133,7 +136,10 @@ export default function Home(){
                             </Typography>
                         </Grid>
 
-                        <Grid display={{xs:'none',md:'block'}} item xs={0} md={5} pt={15} mt={5}>
+                        <Grid display={{xs:'none',md:'block'}} item xs={0} md={5} pt={15} mt={5}
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                        >
                             <img style={{height:"auto",maxWidth:"100%"}} src={LawImage} alt='study'/>
                         </Grid>
 

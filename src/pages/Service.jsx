@@ -83,11 +83,17 @@ export default function Service(){
                     }}
             >
                     <Container sx={{pt:8,pb:8}}>
-                        <Typography align="left" sx={{pb:5}} variant="h4">
+                        <Typography align="left" sx={{pb:5}} variant="h4"
+                            data-aos="fade-up"
+                            data-aos-duration="700"
+                        >
                             法務 - 契約書作成
                         </Typography>
                         {legalContract.map(items => (
-                            <Box>
+                            <Box
+                                data-aos="fade-up"
+                                data-aos-duration="700"
+                            >
                                 <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
                                     {items.title}
                                 </Typography>
@@ -97,11 +103,17 @@ export default function Service(){
                             </Box>
                         ))}
 
-                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4">
+                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4"
+                            data-aos="fade-up"
+                            data-aos-duration="700"
+                        >
                             法務 - 許認可
                         </Typography>
                         {legalPermission.map(items => (
-                            <Box>
+                            <Box
+                                data-aos="fade-up"
+                                data-aos-duration="700"
+                            >
                                 <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
                                     {items.title}
                                 </Typography>
@@ -111,11 +123,17 @@ export default function Service(){
                             </Box>
                         ))}
 
-                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4">
+                        <Typography align="left" sx={{pt:2,pb:5}} variant="h4"
+                            data-aos="fade-up"
+                            data-aos-duration="700"
+                        >
                             労務 - 就業規則・契約書作成
                         </Typography>
                         {laborRelated.map(items => (
-                            <Box>
+                            <Box
+                                data-aos="fade-up"
+                                data-aos-duration="700"
+                            >
                                 <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
                                     {items.title}
                                 </Typography>
