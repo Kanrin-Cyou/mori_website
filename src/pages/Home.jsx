@@ -198,7 +198,13 @@ export default function Home(){
                         Clients Succeed.
                     </Typography>
 
-                    <Typography sx={{pt:5, pb:8, color:"text.secondary"}} align="center" variant="h5" >
+                    <Typography 
+                        sx={{pt:5, pb:8, color:"text.secondary"}} 
+                        align="center" 
+                        variant="h5"
+                        data-aos="fade-up"
+                        data-aos-duration="700"    
+                    >
                         We Are Committed To Delivering Top Quality Legal Service.
                     </Typography>
 
