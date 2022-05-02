@@ -45,6 +45,11 @@ export default function ResponsiveAppBar(){
     navigate(address);
   };
 
+  const handleCloseNavMenus2 = () => {
+    setAnchorElNav(null);
+    scroll.scrollToBottom(100)
+  };
+
   var scroll = Scroll.animateScroll;
 
   HideOnScroll.propTypes = {
@@ -111,7 +116,7 @@ export default function ResponsiveAppBar(){
                             <MenuItem key={'主な取払分野'} onClick={()=> handleCloseNavMenu('/mori_website/service')}>
                                 <Typography textAlign="center">{'主な取払分野'}</Typography>
                             </MenuItem>
-                            <MenuItem key={'アクセス'} onClick={()=>{scroll.scrollToBottom(100)}}>
+                            <MenuItem key={'アクセス'} onClick={()=>handleCloseNavMenus2()}>
                                 <Typography textAlign="center">{'アクセス'}</Typography>
                             </MenuItem>
                         </Menu>
