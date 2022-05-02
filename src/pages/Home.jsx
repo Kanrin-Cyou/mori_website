@@ -3,7 +3,7 @@ import {Grid,Box,Button, Typography,Container} from '@mui/material';
 import LawImage from "../asset/law.jpeg";
 import WorkImage from '../asset/workplace.jpeg'
 import LearningCard from '../components/LearningCard'
-import {useLocation, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import NoteAltOutlinedIcon from '@mui/icons-material/NoteAltOutlined';
 import RuleOutlinedIcon from '@mui/icons-material/RuleOutlined';

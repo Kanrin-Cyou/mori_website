@@ -1,7 +1,5 @@
 import React from 'react';
-import {Grid,Box,Button, Typography,Container} from '@mui/material';
-import WorkImage from '../asset/workplace.jpeg';
-import LawImage from "../asset/law.jpeg";
+import {Box, Typography,Container} from '@mui/material';
 
 export default function Service(){
 

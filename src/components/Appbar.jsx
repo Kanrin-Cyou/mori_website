@@ -7,10 +7,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import {AppBar,Toolbar,Slide,Grid} from '@mui/material';
+import {AppBar,Toolbar,Slide} from '@mui/material';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import PropTypes from 'prop-types';
-import { useLocation, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 var Scroll = require('react-scroll');
 
@@ -40,8 +40,14 @@ export default function ResponsiveAppBar(){
     setAnchorElNav(event.currentTarget);
   };
 
+  const handleNav = (address) => {
+    scroll.scrollToTop();
+    navigate(address);
+  };
+
   const handleCloseNavMenu = (address) => {
     setAnchorElNav(null);
+    scroll.scrollToTop();
     navigate(address);
   };
 
@@ -135,21 +141,21 @@ export default function ResponsiveAppBar(){
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             key={'Home'}
-                            onClick={()=> navigate('/mori_website/')}
+                            onClick={()=> handleNav('/mori_website/')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             Home
                         </Button>
                         <Button
                             key={'事務所案内'}
-                            onClick={()=> navigate('/mori_website/profile')}
+                            onClick={()=> handleNav('/mori_website/profile')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             事務所案内
                         </Button>
                         <Button
                             key={'主な取払分野'}
-                            onClick={()=> navigate('/mori_website/service')}
+                            onClick={()=> handleNav('/mori_website/service')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             主な取扱分野
