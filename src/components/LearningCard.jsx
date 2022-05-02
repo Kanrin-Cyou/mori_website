@@ -14,7 +14,7 @@ export default function learningCard({items,nav}){
                 <CardHeader 
                     avatar={items.icon}
                 />
-                <Typography variant='h5'  pb={2}>
+                <Typography variant='h5' fontWeight='bold' pb={2}>
                     {items.title}
                 </Typography>
                 <Typography variant='body2' >
