@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/mori_website/static/css/main.14f65e7b.css",
-    "main.js": "/mori_website/static/js/main.5453434b.js",
+    "main.js": "/mori_website/static/js/main.b6f66106.js",
     "static/js/787.548068d5.chunk.js": "/mori_website/static/js/787.548068d5.chunk.js",
     "static/media/workplace.jpeg": "/mori_website/static/media/workplace.a01ce186e30592d0ccd7.jpeg",
     "static/media/law.jpeg": "/mori_website/static/media/law.93d084e4c1e6d56e9f89.jpeg",
     "index.html": "/mori_website/index.html",
     "main.14f65e7b.css.map": "/mori_website/static/css/main.14f65e7b.css.map",
-    "main.5453434b.js.map": "/mori_website/static/js/main.5453434b.js.map",
+    "main.b6f66106.js.map": "/mori_website/static/js/main.b6f66106.js.map",
     "787.548068d5.chunk.js.map": "/mori_website/static/js/787.548068d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14f65e7b.css",
-    "static/js/main.5453434b.js"
+    "static/js/main.b6f66106.js"
   ]
 }
