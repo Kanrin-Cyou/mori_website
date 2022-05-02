@@ -24,7 +24,7 @@ export default function learningCard({items,nav}){
             <CardActions>
                 <Button 
                     sx = {{mb:3}}
-                    onClick={()=> {nav('/mori_website/service')}}
+                    onClick={()=> nav('/mori_website/service')}
                 >
                     詳細
                 </Button>

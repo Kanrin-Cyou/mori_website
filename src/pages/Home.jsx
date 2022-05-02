@@ -8,9 +8,17 @@ import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import NoteAltOutlinedIcon from '@mui/icons-material/NoteAltOutlined';
 import RuleOutlinedIcon from '@mui/icons-material/RuleOutlined';
 
+var Scroll = require('react-scroll');
+
 export default function Home(){
 
     const navigate = useNavigate()
+
+    var scroll = Scroll.animateScroll; 
+    const handleNav = (address) => {
+        scroll.scrollToTop();
+        navigate(address);
+    };
 
     const serviceTypes = [
         {
@@ -117,7 +125,7 @@ export default function Home(){
                                 color="secondary" 
                                 variant="contained"
                                 textSizeMedium
-                                onClick={()=> navigate('/mori_website/contact')}
+                                onClick={()=> handleNav('/mori_website/contact')}
                                 sx = {{mt:5, pt:2,pb:2,pl:3,pr:3,color:'black'}}
                                 xs = {{color:'black'}}
                             >
@@ -166,7 +174,7 @@ export default function Home(){
                     <Grid id="hero" container spacing={2}>
                         {serviceTypes.map(items => (
                             <Grid item style={{width:"100%"}} xs={6} md={4} key={items.title} spacing={2}> 
-                                <LearningCard items={items} nav={navigate}/>
+                                <LearningCard items={items} nav={handleNav}/>
                             </Grid>
                         ))}
                     </Grid>
@@ -196,7 +204,7 @@ export default function Home(){
 
                     <Grid id="hero" align="center" container pb={8} spacing={2}>
                         {serviceData.map(items => (
-                             <Grid item sx={12} sm={6} md={3} spacing={2}
+                             <Grid item xs={6} md={3} spacing={2}
                                 data-aos="fade-up"
                                 data-aos-duration="700"
                              > 

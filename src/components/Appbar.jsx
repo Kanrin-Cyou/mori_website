@@ -65,7 +65,7 @@ export default function ResponsiveAppBar(){
      * You won't need it on your project.
      */
     window: PropTypes.func,
-};
+    };
 
 
     return ( 
