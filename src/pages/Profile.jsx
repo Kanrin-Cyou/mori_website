@@ -64,7 +64,7 @@ export default function Profile(){
                                 </Grid>
 
                                 <Grid item xs={12} md={6}
-                                data-aos="fade-right"
+                                data-aos="fade-left"
                                 data-aos-duration="1000"
                                 >
                                     <Typography sx={{pt:5, pb:8, color:"text.secondary"}} align="left" variant="h5">
@@ -107,11 +107,17 @@ export default function Profile(){
                 >
                         <Container sx={{pt:8, pb:8}}>
 
-                            <Typography sx={{pb:2, color:"primary.main"}} align="left" variant="h3">
+                            <Typography sx={{pb:2, color:"primary.main"}} align="left" variant="h3"
+                                data-aos="fade-left"
+                                data-aos-duration="1000"
+                            >
                                 行政書士M&K総合事務所
                             </Typography>
 
-                            <Typography sx={{pb:2}} align="left" variant="h4">
+                            <Typography sx={{pb:2}} align="left" variant="h4"
+                                data-aos="fade-left"
+                                data-aos-duration="1000"
+                            >
                                 事務所概要
                             </Typography>
 
@@ -119,7 +125,10 @@ export default function Profile(){
 
                             <Grid container>
                                 <Grid item xs={12} md={6}>
-                                    <Typography align="left" sx={{pb:5}} variant="h5" >
+                                    <Typography align="left" sx={{pb:5}} variant="h5"
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    >
                                         <br/>
                                         ■ 登録番号:06081463
                                         <br/>
@@ -132,7 +141,10 @@ export default function Profile(){
                                 </Grid>
 
                                 <Grid item xs={12} md={6}>
-                                    <Typography align="left" sx={{pb:5}} variant="h5" >
+                                    <Typography align="left" sx={{pb:5}} variant="h5"
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
+                                    >
                                         <br/>
                                         ■ 登録番号:06081463
                                         <br/>
@@ -147,7 +159,9 @@ export default function Profile(){
 
                             </Grid>
 
-                            <img style={{height:"auto",maxWidth:"100%"}} src={WorkImage} alt='workplace'/>
+                            <img style={{height:"auto",maxWidth:"100%"}} src={WorkImage} alt='workplace' 
+                                data-aos="fade-up"
+                                data-aos-duration="1000"/>
 
                         </Container>
 
