@@ -125,6 +125,9 @@ export default function ResponsiveAppBar(){
                             <MenuItem key={'アクセス'} onClick={()=>handleCloseNavMenus2()}>
                                 <Typography textAlign="center">{'アクセス'}</Typography>
                             </MenuItem>
+                            <MenuItem key={'お問い合わせ'} onClick={()=>handleCloseNavMenu('/mori_website/contact')}>
+                                <Typography textAlign="center">{'お問い合わせ'}</Typography>
+                            </MenuItem>
                         </Menu>
                     </Box>    
                     

@@ -81,7 +81,11 @@ export default function Service(){
                     }}
             >
                     <Container sx={{pt:8,pb:8}}>
-                        <Typography align="left" sx={{pb:5}} variant="h4"
+                        <Typography 
+                            align="left" 
+                            sx={{pb:5}} 
+                            fontWeight='bold' 
+                            variant="h4"
                             data-aos="fade-up"
                             data-aos-duration="700"
                         >
@@ -92,7 +96,7 @@ export default function Service(){
                                 data-aos="fade-up"
                                 data-aos-duration="700"
                             >
-                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} fontWeight='bold' variant="h5">
                                     {items.title}
                                 </Typography>
                                 <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
@@ -102,6 +106,7 @@ export default function Service(){
                         ))}
 
                         <Typography align="left" sx={{pt:2,pb:5}} variant="h4"
+                            fontWeight='bold'
                             data-aos="fade-up"
                             data-aos-duration="700"
                         >
@@ -112,7 +117,7 @@ export default function Service(){
                                 data-aos="fade-up"
                                 data-aos-duration="700"
                             >
-                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} fontWeight='bold' variant="h5">
                                     {items.title}
                                 </Typography>
                                 <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
@@ -122,6 +127,7 @@ export default function Service(){
                         ))}
 
                         <Typography align="left" sx={{pt:2,pb:5}} variant="h4"
+                            fontWeight='bold'
                             data-aos="fade-up"
                             data-aos-duration="700"
                         >
@@ -132,7 +138,7 @@ export default function Service(){
                             data-aos="fade-up"
                             data-aos-duration="700"
                             >
-                                <Typography align="left" sx={{pt:2, color:"primary.main"}} variant="h5">
+                                <Typography align="left" sx={{pt:2, color:"primary.main"}} fontWeight='bold' variant="h5">
                                     {items.title}
                                 </Typography>
                                 <Typography align="left" sx={{pt:2,pb:5, color:"text.secondary"}} variant="h6">
